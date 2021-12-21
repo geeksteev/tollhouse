@@ -8,7 +8,6 @@ app = Flask(__name__)
 def index():
     return render_template('subfolder/index.html', status=True)
 
-
 @app.route('/lightsOn', methods=['POST', 'GET'])
 def lightsOn():
     GPIO.setmode(GPIO.BOARD)
